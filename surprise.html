@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surprise Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .message {
+      color: #555;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    .button {
+      background-color: #e91e63;
+      color: #fff;
+      font-size: 16px;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      display: inline-block;
+    }
+    .button:hover {
+      background-color: #c2185b;
+    }
+    h1 {
+      font-size: 48px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>&#10084;</h1>
+    <button id="tapButton" class="button">Tap here to see something more special than the rose </button>
+    <div id="surprise" style="display: none;">
+      <p>and thats youuuuu</p>
+      <img src="baby.jpeg" alt="Surprise Image">
+      <div class="message">
+        <p>Happy Rose Day for my beautiful wifeuuu!</p>
+      </div>
+      <audio controls autoplay>
+        <source src="song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("tapButton").addEventListener("click", function() {
+      document.getElementById("surprise").style.display = "block";
+    });
+  </script>
+</body>
+</html>
